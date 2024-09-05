@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HomePage from './pages/users/homepage/index.js';
+import Homepage from './pages/users/homepage';
+import { BrowserRouter } from 'react-router-dom';
+import RouterCustom from './router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HomePage />
+  <BrowserRouter>
+    <RouterCustom></RouterCustom>
+  </BrowserRouter>
 );
 
 
